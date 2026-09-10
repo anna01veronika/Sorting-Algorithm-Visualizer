@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="1086.0" xmlns="http://javafx.com/javafx/25.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.algorithmvisualizer.HelloController">
+        <Canvas fx:id="canvas" height="736.0" layoutY="32.0" width="1024.0" />
+   <MenuBar blendMode="DARKEN" prefHeight="22.0" prefWidth="1086.0">
+     <menus>
+         <Menu mnemonicParsing="false" text="Algorithms">
+             <items>
+                 <MenuItem mnemonicParsing="false" onAction="#onBubbleSortClick" text="BubbleSort" />
+                 <MenuItem mnemonicParsing="false" onAction="#onInsertionSortClick" text="InsertionSort" />
+                 <MenuItem mnemonicParsing="false" onAction="#onQuickSortClick" text="QuickSort" />
+             </items>
+         </Menu>
+     </menus>
+   </MenuBar>
+   <Slider id="arraySlider" fx:id="arraySlider" blendMode="ADD" cache="true" layoutX="822.0" layoutY="68.0" majorTickUnit="10.0" max="50.0" min="10.0" prefHeight="27.0" prefWidth="161.0" showTickLabels="true" style="-fx-background-size: 14;" value="30.0" />
+   <Label layoutX="797.0" layoutY="27.0" prefHeight="41.0" prefWidth="248.0" text="Choose the size of the array:" textAlignment="RIGHT" textFill="#f5f4ffd9">
+      <font>
+         <Font name="DejaVu Sans Bold" size="13.0" />
+      </font>
+   </Label>
+</AnchorPane>
