@@ -25,5 +25,5 @@ Features
 
     Customizable Array Size: Adjust the number of elements using a slider before starting.
 
-## DURING WORK
+## During Work
 ![Algoritmus vizualizáló](demo.gif)
